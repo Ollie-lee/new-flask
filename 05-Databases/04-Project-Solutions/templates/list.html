@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Here is a list of all available tutors.</h1>
+  <ul>
+    {% for tut in tutors  %}
+    <li>{{tut}}</li>
+    {% endfor %}
+  </ul>
+
+</div>
+{% endblock %}

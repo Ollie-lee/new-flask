@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Here we use a for loop for a list</p>
+    <ul>
+      {% for tut in tutors %}
+      <li>{{tut}}</li>
+      {% endfor %}
+    </ul>
+    <p>We can also add if/else statements</p>
+    {% if 'jiang' in tutors %}
+      <p>Found you in the list of tutors jiang!</p>
+    {% else %}
+      <p>Hmm, jiang isn't in this list.</p>
+    {% endif %}
+
+
+  </body>
+</html>
